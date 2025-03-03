@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>rofl</title>
+<style>
+#clickableImage {
+  cursor: pointer; /* Изменяет курсор при наведении */
+}
+</style>
+</head>
+<body>
+
+<img id="clickableImage" src="images (1).jpg"  width="1000" height="2000">
+
+<audio id="myAudio" src="ponos-mp3.mp3" preload="auto"></audio>
+
+<script>
+var image = document.getElementById("clickableImage");
+var audio = document.getElementById("myAudio");
+
+image.addEventListener("click", function() {
+  audio.play();
+});
+</script>
+
+</body>
+</html>
